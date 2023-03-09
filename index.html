@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent | Isekai Wibu </title>
+    <link rel="stylesheet" href="/desktop/index.css"/>
+
+</head>
+<body>
+
+    <header class="header-wrapper">
+        <img class="logo" alt="travel-logo" src="http://placekitten.com/50/50" />
+        <div class="menu">
+          <button>Homes</button>
+          <button>Our Package</button>
+          <button>Call Us</button>
+        </div>
+      </header>
+
+    </div>
+</navbar>
+    
+    </header>
+    <main>
+        <section id="hero">
+        <div class="container">
+            <div class="hero-title">
+                <h1> Your Trusted Travel Agents </h1>
+                <h6> Your happiness is our happiness </h6>
+            </div>
+         </div>
+        </section>
+        <section id="about-contact">
+            <div class="container">
+                <div class="about-contact"></div>
+                <div class="about"></div>
+                <div>
+                    <img
+                      class="img-slideshow"
+                      src="https://source.unsplash.com/random/1080x400?landscape&sig=1"
+                    />
+                    <img
+                      class="img-slideshow"
+                      src="https://source.unsplash.com/random/1080x400?landscape&sig=2"
+                    />
+                    <img
+                      class="img-slideshow"
+                      src="https://source.unsplash.com/random/1080x400?landscape&sig=3"
+                    />
+                    <button onclick="plusDivs(-1)">Previous</button>
+                    <button onclick="plusDivs(1)">Next</button>
+                  </div>
+
+                  <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+            
+                    function plusDivs(n) {
+                      showDivs((slideIndex += n));
+                    }
+            
+                    function showDivs(n) {
+                      var i;
+                      var imgList = document.getElementsByClassName("img-slideshow");
+                      if (n > imgList.length) slideIndex = 1;
+                      else if (n < 1) slideIndex = imgList.length;
+            
+                      for (i = 0; i < imgList.length; i++) {
+                        imgList[i].style.display = "none";
+                      }
+            
+                      imgList[slideIndex - 1].style.display = "block";
+                    }
+            
+                    setInterval(() => {
+                      plusDivs(1);
+                    }, 1000);
+                  </script>
+            
+
+                <div class="about-content">
+                    <div class="content-caption">
+                        <p>Liburan jadi menyenangkan bersama Bel's Travel</p>
+                        </div>
+                        <div class="contact-person">
+                            <img class= "about-img"
+                            src="http://placekitten.com/50/50" alt=""/>
+                            <div class="person-info">
+                                <h6>Florence Hughes</h6>
+                                <p>Ibu Rumah Tangga, 28</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border"/>
+                    <div class="about-information"></div>
+                    <h6 class="information-title"> Benefits of using Bel's Travel Agent </h6>
+                    <ul class="ïnformation-list">
+                        <li>
+                            <div class="list-number">1</div>
+                            <p class="list-paragraf">Cheap</p>
+                        </li>
+                        <li>
+                            <div class="list-number">2</div>
+                            <p class="list-paragraf">Free cancellation and refund</p>
+                        </li>
+                        <li>
+                            <div class="list-number">3</div>
+                            <p class="list-paragraf">Discounts for members</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Contact Us</h4>
+                            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                        </div>
+                        <div class="form-section">
+                            <form name="message-form" onsubmit="return validateForm()">
+                              Nama: <input placeholder="Nama" type="text" name="full-name" />
+                              <br />
+                    
+                              Email:
+                              <input type="message-form" name="email" type="text" name="email-address" />
+                              <br />
+
+                            
+                                <label for="">Travel Destination:</label>
+                                <select name="" id="">
+                                  <option value="">Germany</option>
+                                  <option value="">Japan</option>
+                                  <option value="">United States</option>
+                              </select>"
+                              <br />
+    
+                    
+                            
+                    
+                              <input type="submit" value="Submit" />
+                            </form>
+                            <script>
+                              function validateForm() {
+                                var name = document.forms["message-form"]["name"].value;
+                                var email = document.forms["message-form"]["email"].value;
+                                var choice = document.forms["message-form"]["choice"].value;
+                                
+                    
+                                if (name == "" || date == "" || choice == "") {
+                                  alert("Input tidak boleh kosong");
+                                  return false;
+                                }
+                    
+                                document.getElementById("sender-name").innerText = name;
+                                document.getElementById("sender-email").innerText = date;
+                                document.getElementById("sender-choice").innerText = gender;
+                                return false;
+                              }
+                            </script>
+           
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Ini Bagian Our Package -->
+    <section id="hero-package">
+        <div class="package-title">
+            <h1>Our Package</h1>
+        </div>
+    </section>
+    <!-- Ini bagian Package Card -->
+    <section id="package">
+        <div class="container">
+            <!-- Ini Package List -->
+            <div class="package-list" id="package-list">
+                <ul class="list-package">
+                    <li>
+                        <div class="list-icon">&#x1F4A1;</div>
+                        <div class="list-paragraf">
+                            <h5>Germany</h5>
+                            <p>
+                                Travel dan wisata di Jerman. <br>
+                                Kunjungi tempat para peminum bir <br>
+                                pecinta bola, dan penikmat teknologi.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-package">
+                    <li>
+                        <div class="list-icon">&#x1F4A1;</div>
+                        <div class="list-paragraf">
+                            <h5>Japan</h5>
+                            <p>
+                                Travel dan wisata di Jepang. <br>
+                                Kunjungi Shibuya Street, Tokyo, <br>
+                                dan rasakan makan ramen dan minum matcha <br>
+                                yang otentik.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-package">
+                    <li>
+                        <div class="list-icon">&#x1F4A1;</div>
+                        <div class="list-paragraf">
+                            <h5>United States</h5>
+                            <p>
+                                Travel dan wisata di Amerika. <br>
+                                Kunjungi Patung Liberty di New York, <br>
+                                serta menonton American Football live di stadionnya <br>
+                                sambil menikmati hot dog khas Amerika.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr class="line" />
+            <div class="package-list" id="package-list">
+                <ul class="list-package">
+                    <li>
+                        <div class="list-icon">&#9733;</div>
+                        <div class="list-paragraf">
+                            <h5>United Arab Emirates</h5>
+                            <p>
+                                Enjoy keindahan Burj Khalifa, <br>
+                                kemewahan pasar Souk di Dubai,  <br>
+                                serta makanan-makanan Arab yang menggugah selera. <br>
+                               
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-package">
+                    <li>
+                        <div class="list-icon">&#9733;</div>
+                        <div class="list-paragraf">
+                            <h5>United Kingdom</h5>
+                            <p>
+                                Ingin melihat Big Ben dan the Eye? <br>
+                                Atau ingin mengelilingi berbagai stadion bola di Inggris? <br>
+                        
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-package">
+                    <li>
+                        <div class="list-icon">&#9733;</div>
+                        <div class="list-paragraf">
+                            <h5>Thailand</h5>
+                            <p>
+                                Tempat favorit para pecinta kuliner Asia, <br>
+                                mulai dari yang terkesan normal seperti Tom Yum, <br>
+                                atau yang super aneh seperti jangkrik, belalang, <br>
+                                dan ulat goreng <br>
+                               
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>   
+        </div>
+    </section>
+</main>
+<main  id="call-us" >
+    <section>
+        <div class="container">
+            <!-- Ini Package Closing -->
+            <div class="package-closing">
+                <h2>Anda Tertarik Berlibur ke Luar Negeri?</h2>
+                <h5>
+                    Mari segera miliki pengalaman yang tak terlupakan! <br>
+                    Jelajahi dunia bersama Bel's Travel! 
+
+                </h5>
+                <button class="call"><a href="https://www.instagram.com/behlinduh/">CONTACT US</a></button>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+          <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <img class="logo" src="http://placekitten.com/50/50" alt="logo">
+                <div>
+                    <h4>Terms of Service</h4>
+                    <h4>Privacy Policy</h4>
+                </div>
+                <p>&copy; 2023 Bel's Travel</p>
+            </div>
+        </div>
+    </footer>
+
+  
+</body>
+</html>
